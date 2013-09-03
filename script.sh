@@ -10,7 +10,7 @@
 ########################################################
 
 ## Check CoreStorage list for devices
-if [ `diskutil cd list | grep -c "No CoreStorage logical volume groups found"` -eq 0  ]
+if [ `diskutil cs list | grep -c "No CoreStorage logical volume groups found"` -eq 0  ]
 then
   echo "CoreStorage Volume found"
 
